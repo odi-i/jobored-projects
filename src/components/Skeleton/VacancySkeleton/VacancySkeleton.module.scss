@@ -1,0 +1,35 @@
+.wrapper {
+   display: flex;
+   justify-content: space-between;
+   width: 723px;
+   background: v.$white;
+   border: 1px solid v.$grey-200;
+   border-radius: 12px;
+   padding: 22px;
+
+   .main {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      .conditions {
+         display: flex;
+         align-items: center;
+         gap: 12px;
+      }
+
+      .place {
+         display: flex;
+         align-items: center;
+         gap: 15px;
+
+         .town {
+            margin: 5px 0 0 0;
+         }
+      }
+   }
+
+   .star {
+      height: 25px;
+   }
+}

@@ -1,0 +1,60 @@
+:global(.mantine-Input-wrapper).input {
+   width: 773px;
+   height: 48px;
+
+   :global(.mantine-Input-input) {
+      padding: 0;
+      padding-right: 105px;
+      height: 48px;
+      border: 1px solid v.$grey-200;
+      background: v.$white;
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: v.$black;
+
+      &[data-with-icon] {
+         padding-left: 35px;
+      }
+
+      color: v.$black;
+      padding-left: 12px;
+      padding-right: 37px;
+
+      &:hover {
+         border-color: v.$blue-500;
+      }
+
+      &:focus {
+         border-color: v.$blue-500;
+      }
+
+      &::placeholder {
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 21px;
+         color: v.$grey-500;
+      }
+   }
+}
+
+.button {
+   font-family: "Inter";
+   width: 83px;
+   height: 32px;
+   background: v.$blue-500;
+   border-radius: 8px;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 21px;
+   color: v.$white;
+
+   &:hover {
+      background-color: v.$blue-400;
+   }
+
+   &:active {
+      background-color: v.$blue-600;
+   }
+}

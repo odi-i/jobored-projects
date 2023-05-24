@@ -1,0 +1,169 @@
+.wrapper {
+   width: 275px;
+   height: 320px;
+   background: v.$white;
+   border: 1px solid v.$grey-200;
+   border-radius: 12px;
+   padding: 19px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+
+   .topic {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 0 12px 0;
+
+      .name {
+         font-weight: 700;
+         font-size: 20px;
+         line-height: 20px;
+         color: v.$black;
+      }
+
+      .button {
+         display: flex;
+         gap: 4px;
+         cursor: pointer;
+
+         .text {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: v.$grey-500;
+
+            &_hover {
+               color: v.$blue-400;
+            }
+
+            &_active {
+               color: v.$blue-500;
+            }
+         }
+      }
+   }
+
+   .job {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      .text {
+         font-weight: 700;
+         font-size: 16px;
+         line-height: 19px;
+         color: v.$black;
+      }
+
+      :global(.mantine-Select-root).input {
+         :global(.mantine-Select-rightSection) {
+            pointer-events: none;
+            margin-right: 4px;
+         }
+
+         :global(.mantine-Select-input) {
+            font-size: 14px;
+            line-height: 20px;
+            color: v.$black;
+            padding-left: 12px;
+            padding-right: 37px;
+
+            &::placeholder {
+               font-size: 14px;
+               line-height: 20px;
+               color: v.$grey-500;
+            }
+
+            &:hover {
+               border-color: v.$blue-500;
+            }
+
+            &:focus {
+               border-color: v.$blue-500;
+            }
+         }
+
+         :global(.mantine-Select-item) {
+            font-size: 14px;
+            line-height: 20px;
+            color: v.$black;
+            padding-left: 12px;
+
+            &:hover {
+               background-color: v.$blue-100;
+            }
+
+            &[data-selected] {
+               background-color: v.$blue-500;
+               color: v.$white;
+            }
+         }
+      }
+   }
+
+   .salary {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      .text {
+         font-weight: 700;
+         font-size: 16px;
+         line-height: 19px;
+         color: v.$black;
+      }
+
+      :global(.mantine-NumberInput-input) {
+         font-size: 14px;
+         line-height: 20px;
+         padding-left: 12px;
+
+         &::placeholder {
+            font-size: 14px;
+            line-height: 20px;
+            color: v.$grey-500;
+         }
+
+         &:hover {
+            border-color: v.$blue-500;
+         }
+
+         &:focus {
+            border-color: v.$blue-500;
+         }
+      }
+
+      :global(.mantine-NumberInput-control) {
+         border: none;
+         padding-right: 5px;
+         color: v.$grey-500;
+      }
+
+      :global(.mantine-NumberInput-controlDown) {
+         bottom: 4px;
+      }
+
+      :global(.mantine-NumberInput-controlUp) {
+         top: 4px;
+      }
+   }
+
+   :global(.mantine-Button-root).button {
+      border: none;
+      width: 275px;
+      height: 40px;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+      background: v.$blue-500;
+
+      &:hover {
+         background-color: v.$blue-400;
+      }
+
+      &:active {
+         background-color: v.$blue-600;
+      }
+   }
+}

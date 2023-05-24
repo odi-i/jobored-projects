@@ -1,0 +1,57 @@
+header {
+   width: 100%;
+   height: 84px;
+   background: v.$white;
+}
+
+.wrapper {
+   margin: 0 auto;
+   width: 1116px;
+   height: 100%;
+   display: flex;
+   gap: 280px;
+   align-items: center;
+
+   .logo {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      text-decoration: none;
+
+      .text {
+         font-family: "Poppins";
+         font-style: normal;
+         font-weight: 600;
+         font-size: 24px;
+         line-height: 36px;
+         letter-spacing: -0.02em;
+         color: v.$black;
+      }
+   }
+
+   .menu {
+      display: flex;
+      gap: 60px;
+      align-items: center;
+
+      .item {
+         text-decoration: none;
+         font-family: "Inter";
+         font-style: normal;
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 20px;
+         color: v.$black;
+      }
+
+      .active {
+         text-decoration: none;
+         font-family: "Inter";
+         font-style: normal;
+         font-size: 16px;
+         line-height: 20px;
+         font-weight: 500;
+         color: v.$blue-500;
+      }
+   }
+}

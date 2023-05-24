@@ -1,0 +1,28 @@
+.wrapper {
+   margin: 120px auto 0;
+   width: 330px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 32px;
+
+   .text {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+   }
+
+   .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      width: 164px;
+      height: 42px;
+      background: v.$blue-100;
+      border-radius: 8px;
+      font-size: 14px;
+      line-height: 155%;
+      color: v.$blue-600;
+   }
+}

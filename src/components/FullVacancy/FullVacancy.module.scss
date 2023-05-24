@@ -1,0 +1,15 @@
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   padding: 40px 0 51px;
+   margin: 0 auto;
+   width: 773px;
+   gap: 20px;
+
+   .text {
+      padding: 24px;
+      background: v.$white;
+      border: 1px solid v.$grey-200;
+      border-radius: 12px;
+   }
+}

@@ -1,0 +1,62 @@
+.wrapper {
+   display: flex;
+   justify-content: space-between;
+   width: 723px;
+   background: v.$white;
+   border: 1px solid v.$grey-200;
+   border-radius: 12px;
+   padding: 24px;
+
+   .main {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      .profession {
+         font-weight: 600;
+         font-size: 20px;
+         line-height: 24px;
+         color: v.$blue-500;
+         text-decoration: none;
+      }
+
+      .conditions {
+         display: flex;
+         align-items: center;
+         gap: 12px;
+
+         .money {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: v.$black;
+         }
+
+         .type_of_work {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: v.$black;
+         }
+      }
+
+      .place {
+         display: flex;
+         align-items: center;
+         gap: 8px;
+
+         .town {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: v.$black;
+         }
+      }
+   }
+
+   .star {
+      height: 25px;
+      align-items: start;
+      cursor: pointer;
+   }
+}
